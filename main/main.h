@@ -9,7 +9,7 @@
 #define PWM_TIMEBASE_RESOLUTION_HZ 1000000  // 1MHz, 1us per tick
 #define PWM_TIMEBASE_PERIOD        500      // 500us
 
-#define USE_GPIO_ISR_SERVICE // use gpio_install_isr_service() API if defined, else gpio_isr_register() API used
+//#define USE_GPIO_ISR_SERVICE // gpio_install_isr_service() API performance is worse than gpio_isr_register() API
 
 void start_spp(void);
 void start_pwm(void);

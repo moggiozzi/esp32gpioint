@@ -1,4 +1,3 @@
-14:05:55 USER: COM20 opened
 ets Jun  8 2016 00:22:57
 
 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
@@ -27,287 +26,200 @@ I (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000
 I (78) boot:  2 factory          factory app      00 00 00010000 00100000
 I (85) boot: End of partition table
 I (88) boot_comm: chip revision: 1, min. application chip revision: 0
-I (94) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x1c320 (115488) map
-I (146) esp_image: segment 1: paddr=0x0002c348 vaddr=0x3ff80000 size=0x0001c (    28) load
-I (146) esp_image: segment 2: paddr=0x0002c36c vaddr=0x3ffbdb60 size=0x03cac ( 15532) load
-I (157) esp_image: segment 3: paddr=0x00030020 vaddr=0x400d0020 size=0x6d610 (448016) map
-I (329) esp_image: segment 4: paddr=0x0009d638 vaddr=0x3ffc180c size=0x00ecc (  3788) load
-I (331) esp_image: segment 5: paddr=0x0009e50c vaddr=0x40080000 size=0x17ab8 ( 96952) load
-I (389) boot: Loaded app from partition at offset 0x10000
-I (389) boot: Disabling RNG early entropy source...
+I (94) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x1c038 (114744) map
+I (146) esp_image: segment 1: paddr=0x0002c060 vaddr=0x3ff80000 size=0x0001c (    28) load
+I (146) esp_image: segment 2: paddr=0x0002c084 vaddr=0x3ffbdb60 size=0x039c4 ( 14788) load
+I (157) esp_image: segment 3: paddr=0x0002fa50 vaddr=0x40080000 size=0x005c8 (  1480) load
+I (159) esp_image: segment 4: paddr=0x00030020 vaddr=0x400d0020 size=0x6d180 (446848) map
+I (337) esp_image: segment 5: paddr=0x0009d1a8 vaddr=0x400805c8 size=0x16f90 ( 94096) load
+I (390) boot: Loaded app from partition at offset 0x10000
+I (390) boot: Disabling RNG early entropy source...
 I (391) cpu_start: Multicore app
-I (402) cpu_start: Pro cpu start user code
+I (403) cpu_start: Pro cpu start user code
 I (403) cpu_start: cpu freq: 160000000 Hz
-I (403) app_init: Application information:
-I (404) app_init: Project name:     bt_spp_acceptor_demo
-I (409) app_init: App version:      1
-I (413) app_init: Compile time:     Mar 20 2025 11:57:33
-I (418) app_init: ELF file SHA256:  2c0f9b6fe...
-I (422) app_init: ESP-IDF:          v5.4-dirty
-I (426) efuse_init: Min chip rev:     v0.0
-I (430) efuse_init: Max chip rev:     v3.99 
-I (434) efuse_init: Chip rev:         v1.0
-I (438) heap_init: Initializing. RAM available for dynamic allocation:
-I (444) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
-I (449) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
-I (454) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
-I (460) heap_init: At 3FFC85B0 len 00017A50 (94 KiB): DRAM
-I (465) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
-I (470) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
-I (476) heap_init: At 40097AB8 len 00008548 (33 KiB): IRAM
-I (482) spi_flash: detected chip: generic
-I (485) spi_flash: flash io: dio
-I (489) coexist: coex firmware version: 49a8cdc
-I (493) main_task: Started on CPU0
-I (503) main_task: Calling app_main()
-I (503) : 
+I (404) app_init: Application information:
+I (405) app_init: Project name:     bt_spp_acceptor_demo
+I (410) app_init: App version:      1
+I (414) app_init: Compile time:     Mar 20 2025 16:00:51
+I (419) app_init: ELF file SHA256:  827ae23bd...
+I (423) app_init: ESP-IDF:          v5.4-dirty
+I (427) efuse_init: Min chip rev:     v0.0
+I (431) efuse_init: Max chip rev:     v3.99 
+I (435) efuse_init: Chip rev:         v1.0
+I (439) heap_init: Initializing. RAM available for dynamic allocation:
+I (445) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (450) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (455) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (461) heap_init: At 3FFC7400 len 00018C00 (99 KiB): DRAM
+I (466) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (471) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (477) heap_init: At 40097558 len 00008AA8 (34 KiB): IRAM
+I (483) spi_flash: detected chip: generic
+I (486) spi_flash: flash io: dio
+I (490) coexist: coex firmware version: 49a8cdc
+I (494) main_task: Started on CPU0
+I (504) main_task: Calling app_main()
+I (504) : 
 
-App build Mar 20 2025 14:04:27 
+App build Mar 20 2025 16:03:44 
 ESP_IDF_VER v5.4-dirty
 
 
-I (513) BTDM_INIT: BT controller compile version [20b459d]
-I (513) BTDM_INIT: Bluetooth MAC: 3c:61:05:64:58:ee
-I (513) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07
-W (523) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
-W (603) phy_init: saving new calibration data because of checksum failure, mode(2)
-I (1183) SPP_ACCEPTOR_DEMO: ESP_SPP_INIT_EVT
-I (1183) SPP_ACCEPTOR_DEMO: ESP_SPP_START_EVT handle:129 sec_id:55 scn:1
-I (1193) SPP_ACCEPTOR_DEMO: event: 10
-I (1193) SPP_ACCEPTOR_DEMO: Own address:[3c:61:05:64:58:ee]
-I (1193) pwm: Start PWM...
-I (1203) pwm: Connect timer and operator
-I (1203) pwm: Create comparator and generator from the operator
-I (1203) pwm: Set generator action on timer and compare event
-I (1213) pwm: Enable and start timer
-I (1213) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 
-I (1223) start_gpio_int: OK
-I (11223) BM:  benchmark results: min = 484, max = 514, total = 8982011
-I (11223) BM: , average = 499
+I (514) BTDM_INIT: BT controller compile version [20b459d]
+I (514) BTDM_INIT: Bluetooth MAC: 3c:61:05:64:58:ee
+I (514) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07
+W (514) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
+W (594) phy_init: saving new calibration data because of checksum failure, mode(2)
+I (1174) SPP_ACCEPTOR_DEMO: ESP_SPP_INIT_EVT
+I (1174) SPP_ACCEPTOR_DEMO: ESP_SPP_START_EVT handle:129 sec_id:55 scn:1
+I (1184) SPP_ACCEPTOR_DEMO: event: 10
+I (1184) SPP_ACCEPTOR_DEMO: Own address:[3c:61:05:64:58:ee]
+I (1194) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 
+I (1194) start_gpio_int: OK
+I (1194) pwm: Start PWM...
+I (1204) pwm: Connect timer and operator
+I (1204) pwm: Create comparator and generator from the operator
+I (1214) pwm: Set generator action on timer and compare event
+I (1214) pwm: Enable and start timer
+I (2214) BM:  benchmark results: min = 1, max = 15900, total = 0
+I (2214) BM: , average = 0
 
 
-I (21223) BM:  benchmark results: min = 496, max = 504, total = 18962015
-I (21223) BM: , average = 499
+I (3214) BM:  benchmark results: min = 434, max = 565, total = 1010433
+I (3214) BM: , average = 505
 
 
-I (31223) BM:  benchmark results: min = 498, max = 500, total = 28942020
-I (31223) BM: , average = 499
+I (4214) BM:  benchmark results: min = 447, max = 551, total = 2008433
+I (4214) BM: , average = 499
 
 
-I (41223) BM:  benchmark results: min = 492, max = 506, total = 38922020
-I (41223) BM: , average = 499
+I (5214) BM:  benchmark results: min = 438, max = 560, total = 3006432
+I (5214) BM: , average = 498
 
 
-I (51223) BM:  benchmark results: min = 494, max = 504, total = 48902021
-I (51223) BM: , average = 499
+I (6214) BM:  benchmark results: min = 444, max = 554, total = 4004432
+I (6214) BM: , average = 499
 
 
-W (57473) BT_HCI: hcif conn complete: hdl 0x80, st 0x0
-I (57493) SPP_ACCEPTOR_DEMO: event: 16
-I (57683) SPP_ACCEPTOR_DEMO: ESP_BT_GAP_CFM_REQ_EVT Please compare the numeric value: 451252
-I (58883) SPP_ACCEPTOR_DEMO: authentication success: WIN-H1G3DJ9CAKM bda:[00:19:86:00:23:06]
-I (58903) SPP_ACCEPTOR_DEMO: event: 21
-I (61223) BM:  benchmark results: min = 454, max = 545, total = 58882114
-I (61223) BM: , average = 499
+I (7214) BM:  benchmark results: min = 426, max = 572, total = 5002431
+I (7214) BM: , average = 498
 
 
-W (62123) BT_HCI: hcif disc complete: hdl 0x80, rsn 0x13
-I (62123) SPP_ACCEPTOR_DEMO: event: 17
-I (71223) BM:  benchmark results: min = 497, max = 501, total = 68862684
-I (71223) BM: , average = 499
+I (8214) BM:  benchmark results: min = 442, max = 557, total = 6000430
+I (8214) BM: , average = 498
 
 
-I (81223) BM:  benchmark results: min = 487, max = 511, total = 78842687
-I (81223) BM: , average = 499
+I (9214) BM:  benchmark results: min = 429, max = 569, total = 6998430
+I (9214) BM: , average = 499
 
 
-W (90483) BT_HCI: hcif conn complete: hdl 0x81, st 0x0
-I (90493) SPP_ACCEPTOR_DEMO: event: 16
-W (90633) BT_APPL: new conn_srvc id:26, app_id:255
-I (90633) SPP_ACCEPTOR_DEMO: ESP_SPP_SRV_OPEN_EVT status:0 handle:129, rem_bda:[00:19:86:00:23:06]
-I (91223) BM:  benchmark results: min = 463, max = 535, total = 88822687
-I (91223) BM: , average = 499
+I (10214) BM:  benchmark results: min = 419, max = 579, total = 7996429
+I (10214) BM: , average = 498
 
 
-I (94963) SPP_ACCEPTOR_DEMO: speed(90.246780s ~ 94.568085s): 0.847892 kbit/s
-I (97793) SPP_ACCEPTOR_DEMO: speed(94.568085s ~ 97.401672s): 2.586121 kbit/s
-I (100653) SPP_ACCEPTOR_DEMO: speed(97.401672s ~ 100.257881s): 11.545374 kbit/s
-I (101223) BM:  benchmark results: min = 462, max = 537, total = 98802475
-I (101223) BM: , average = 499
+I (11214) BM:  benchmark results: min = 426, max = 572, total = 8994428
+I (11214) BM: , average = 498
 
 
-I (103813) SPP_ACCEPTOR_DEMO: speed(100.257881s ~ 103.417961s): 8.116250 kbit/s
-I (106803) SPP_ACCEPTOR_DEMO: speed(103.417961s ~ 106.405548s): 4.905632 kbit/s
-I (109433) SPP_ACCEPTOR_DEMO: speed(106.405548s ~ 109.041862s): 6.949095 kbit/s
-I (111223) BM:  benchmark results: min = 444, max = 555, total = 108782760
-I (111223) BM: , average = 499
+I (12214) BM:  benchmark results: min = 430, max = 568, total = 9992427
+I (12214) BM: , average = 498
 
 
-W (117143) BT_HCI: hci cmd send: sniff: hdl 0x81, intv(400 800)
-W (117153) BT_HCI: hcif mode change: hdl 0x81, mode 2, intv 800, status 0x0
-I (117153) SPP_ACCEPTOR_DEMO: ESP_BT_GAP_MODE_CHG_EVT mode:2 bda:[00:19:86:00:23:06]
-I (121223) BM:  benchmark results: min = 479, max = 519, total = 118763513
-I (121223) BM: , average = 499
+I (13214) BM:  benchmark results: min = 433, max = 565, total = 10990426
+I (13214) BM: , average = 498
 
 
-W (129623) BT_RFCOMM: port_rfc_closed RFCOMM connection in server:1 state 2 closed: Closed (res: 19)
-I (129623) SPP_ACCEPTOR_DEMO: ESP_SPP_CLOSE_EVT status:0 handle:129 close_by_remote:1
-W (130623) BT_HCI: hcif mode change: hdl 0x81, mode 0, intv 0, status 0x0
-I (130623) SPP_ACCEPTOR_DEMO: ESP_BT_GAP_MODE_CHG_EVT mode:0 bda:[00:19:86:00:23:06]
-W (130633) BT_RFCOMM: rfc_find_lcid_mcb LCID reused LCID:0x40 current:0x0
-W (130633) BT_RFCOMM: RFCOMM_DisconnectInd LCID:0x40
-I (131223) BM:  benchmark results: min = 488, max = 509, total = 128744031
-I (131223) BM: , average = 499
+I (14214) BM:  benchmark results: min = 420, max = 578, total = 11988425
+I (14214) BM: , average = 498
 
 
-W (133803) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13
-I (133803) SPP_ACCEPTOR_DEMO: event: 17
-I (141223) BM:  benchmark results: min = 468, max = 530, total = 138724590
-I (141223) BM: , average = 499
+I (15214) BM:  benchmark results: min = 431, max = 568, total = 12986424
+I (15214) BM: , average = 498
 
 
-I (151223) BM:  benchmark results: min = 452, max = 546, total = 148704596
-I (151223) BM: , average = 499
+I (16214) BM:  benchmark results: min = 421, max = 577, total = 13984424
+I (16214) BM: , average = 499
 
 
-I (161223) BM:  benchmark results: min = 436, max = 562, total = 158684599
-I (161223) BM: , average = 499
+I (17214) BM:  benchmark results: min = 424, max = 574, total = 14982423
+I (17214) BM: , average = 498
 
 
-I (171223) BM:  benchmark results: min = 462, max = 537, total = 168664606
-I (171223) BM: , average = 499
+I (18214) BM:  benchmark results: min = 416, max = 582, total = 15980422
+I (18214) BM: , average = 498
 
 
-I (181223) BM:  benchmark results: min = 406, max = 592, total = 178644595
-I (181223) BM: , average = 499
+I (19214) BM:  benchmark results: min = 425, max = 574, total = 16978421
+I (19214) BM: , average = 498
 
 
-I (191223) BM:  benchmark results: min = 390, max = 608, total = 188624601
-I (191223) BM: , average = 499
+I (20214) BM:  benchmark results: min = 412, max = 586, total = 17976421
+I (20214) BM: , average = 499
 
 
-I (201223) BM:  benchmark results: min = 374, max = 624, total = 198604607
-I (201223) BM: , average = 499
+I (21214) BM:  benchmark results: min = 421, max = 577, total = 18974420
+I (21214) BM: , average = 498
 
 
-I (211223) BM:  benchmark results: min = 493, max = 505, total = 208584611
-I (211223) BM: , average = 499
+I (22214) BM:  benchmark results: min = 409, max = 589, total = 19972419
+I (22214) BM: , average = 498
 
 
-I (221223) BM:  benchmark results: min = 356, max = 642, total = 218564618
-I (221223) BM: , average = 499
+I (23214) BM:  benchmark results: min = 416, max = 582, total = 20970418
+I (23214) BM: , average = 498
 
 
-I (231223) BM:  benchmark results: min = 328, max = 670, total = 228544626
-I (231223) BM: , average = 499
+I (24214) BM:  benchmark results: min = 416, max = 582, total = 21968417
+I (24214) BM: , average = 498
 
 
-I (241223) BM:  benchmark results: min = 318, max = 686, total = 238524629
-I (241223) BM: , average = 499
+W (25154) BT_HCI: hcif conn complete: hdl 0x80, st 0x0
+I (25164) SPP_ACCEPTOR_DEMO: event: 16
+I (25214) BM:  benchmark results: min = 414, max = 585, total = 22966416
+I (25214) BM: , average = 498
 
 
-I (251223) BM:  benchmark results: min = 305, max = 700, total = 248504634
-I (251223) BM: , average = 499
+I (25344) SPP_ACCEPTOR_DEMO: ESP_BT_GAP_CFM_REQ_EVT Please compare the numeric value: 20501
+I (26214) BM:  benchmark results: min = 490, max = 508, total = 23964428
+I (26214) BM: , average = 499
 
 
-I (261223) BM:  benchmark results: min = 284, max = 716, total = 258484618
-I (261223) BM: , average = 499
+I (26934) SPP_ACCEPTOR_DEMO: authentication success: WIN-H1G3DJ9CAKM bda:[00:19:86:00:23:06]
+I (26934) SPP_ACCEPTOR_DEMO: event: 21
+I (27214) BM:  benchmark results: min = 483, max = 515, total = 24962477
+I (27214) BM: , average = 499
 
 
-I (271223) BM:  benchmark results: min = 267, max = 732, total = 268464621
-I (271223) BM: , average = 499
+I (28214) BM:  benchmark results: min = 462, max = 536, total = 25960504
+I (28214) BM: , average = 499
 
 
-I (281223) BM:  benchmark results: min = 493, max = 505, total = 278444628
-I (281223) BM: , average = 499
+I (29214) BM:  benchmark results: min = 490, max = 508, total = 26958488
+I (29214) BM: , average = 498
 
 
-I (291223) BM:  benchmark results: min = 267, max = 762, total = 288424638
-I (291223) BM: , average = 499
+W (30184) BT_HCI: hcif disc complete: hdl 0x80, rsn 0x13
+I (30184) SPP_ACCEPTOR_DEMO: event: 17
+I (30214) BM:  benchmark results: min = 332, max = 1226, total = 27956488
+I (30214) BM: , average = 499
 
 
-I (301223) BM:  benchmark results: min = 452, max = 546, total = 298404649
-I (301223) BM: , average = 499
+I (31214) BM:  benchmark results: min = 171, max = 834, total = 28954988
+I (31214) BM: , average = 499
 
 
-I (311223) BM:  benchmark results: min = 492, max = 506, total = 308384657
-I (311223) BM: , average = 499
+I (32214) BM:  benchmark results: min = 401, max = 597, total = 29952987
+I (32214) BM: , average = 498
 
 
-I (321223) BM:  benchmark results: min = 440, max = 559, total = 318364663
-I (321223) BM: , average = 499
+I (33214) BM:  benchmark results: min = 149, max = 852, total = 30950986
+I (33214) BM: , average = 498
 
 
-I (331223) BM:  benchmark results: min = 423, max = 575, total = 328344674
-I (331223) BM: , average = 499
+I (34214) BM:  benchmark results: min = 492, max = 506, total = 31948986
+I (34214) BM: , average = 499
 
 
-I (341223) BM:  benchmark results: min = 407, max = 591, total = 338324644
-I (341223) BM: , average = 499
+I (35214) BM:  benchmark results: min = 493, max = 505, total = 32946985
+I (35214) BM: , average = 498
 
-
-I (351223) BM:  benchmark results: min = 482, max = 516, total = 348304652
-I (351223) BM: , average = 499
-
-
-I (361223) BM:  benchmark results: min = 378, max = 621, total = 358284662
-I (361223) BM: , average = 499
-
-
-I (371223) BM:  benchmark results: min = 361, max = 637, total = 368264669
-I (371223) BM: , average = 499
-
-
-I (381223) BM:  benchmark results: min = 347, max = 653, total = 378244676
-I (381223) BM: , average = 499
-
-
-I (391223) BM:  benchmark results: min = 491, max = 507, total = 388224683
-I (391223) BM: , average = 499
-
-
-I (401223) BM:  benchmark results: min = 318, max = 683, total = 398204688
-I (401223) BM: , average = 499
-
-
-I (411223) BM:  benchmark results: min = 305, max = 699, total = 408184693
-I (411223) BM: , average = 499
-
-
-I (421223) BM:  benchmark results: min = 285, max = 715, total = 418164680
-I (421223) BM: , average = 499
-
-
-I (431223) BM:  benchmark results: min = 270, max = 729, total = 428144684
-I (431223) BM: , average = 499
-
-
-I (441223) BM:  benchmark results: min = 267, max = 745, total = 438124694
-I (441223) BM: , average = 499
-
-
-I (451223) BM:  benchmark results: min = 267, max = 761, total = 448104698
-I (451223) BM: , average = 499
-
-
-I (461223) BM:  benchmark results: min = 472, max = 526, total = 458084703
-I (461223) BM: , average = 499
-
-
-I (471223) BM:  benchmark results: min = 496, max = 502, total = 468064706
-I (471223) BM: , average = 499
-
-
-I (481223) BM:  benchmark results: min = 443, max = 556, total = 478044708
-I (481223) BM: , average = 499
-
-
-I (491223) BM:  benchmark results: min = 426, max = 572, total = 488024715
-I (491223) BM: , average = 499
-
-
-I (501223) BM:  benchmark results: min = 410, max = 588, total = 498004697
-I (501223) BM: , average = 499
-
-
-14:14:19 USER: COM20 closed
