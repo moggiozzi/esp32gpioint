@@ -1,0 +1,553 @@
+13:43:43 USER: COM20 opened
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4
+load:0x3fff0034,len:6320
+ho 0 tail 12 room 4
+load:0x40078000,len:13824
+load:0x40080400,len:4020
+entry 0x4008068c
+I (30) boot: ESP-IDF v4.2-dev-1303-gcd4fa46f5-dirty 2nd stage bootloader
+I (31) boot: compile time 17:27:34
+I (31) boot: Nov 25 2021
+I (32) boot: chip revision: 1
+I (35) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (41) boot.esp32: SPI Speed      : 40MHz
+I (45) boot.esp32: SPI Mode       : DIO
+I (48) boot.esp32: SPI Flash Size : 4MB
+I (52) boot: Enabling RNG early entropy source...
+I (56) boot: Partition Table:
+I (59) boot: ## Label            Usage          Type ST Offset   Length
+I (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (78) boot:  2 factory          factory app      00 00 00010000 00100000
+I (85) boot: End of partition table
+I (88) boot_comm: chip revision: 1, min. application chip revision: 0
+I (94) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x16a80 ( 92800) map
+I (137) esp_image: segment 1: paddr=0x00026aa8 vaddr=0x3ffbdb60 size=0x03474 ( 13428) load
+I (143) esp_image: segment 2: paddr=0x00029f24 vaddr=0x40080000 size=0x00404 (  1028) load
+I (144) esp_image: segment 3: paddr=0x0002a330 vaddr=0x40080404 size=0x05ce8 ( 23784) load
+I (161) esp_image: segment 4: paddr=0x00030020 vaddr=0x400d0020 size=0x64e70 (413296) map
+I (318) esp_image: segment 5: paddr=0x00094e98 vaddr=0x400860ec size=0x0df84 ( 57220) load
+I (354) boot: Loaded app from partition at offset 0x10000
+I (354) boot: Disabling RNG early entropy source...
+I (355) cpu_start: Pro cpu up.
+I (355) cpu_start: Application information:
+I (359) cpu_start: Project name:     bt_spp_acceptor_demo
+I (364) cpu_start: App version:      1
+I (368) cpu_start: Compile time:     Mar 20 2025 12:25:43
+I (373) cpu_start: ELF file SHA256:  5c1195d3...
+I (377) cpu_start: ESP-IDF:          v4.2-dev-1303-gcd4fa46f5-dirty
+I (383) cpu_start: Starting app cpu, entry point is 0x40081548
+I (0) cpu_start: App cpu up.
+I (392) heap_init: Initializing. RAM available for dynamic allocation:
+I (398) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (403) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (408) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (413) heap_init: At 3FFCADE8 len 00015218 (84 KiB): DRAM
+I (418) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (424) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (429) heap_init: At 40094070 len 0000BF90 (47 KiB): IRAM
+I (435) cpu_start: Pro cpu start user code
+I (452) spi_flash: detected chip: generic
+I (452) spi_flash: flash io: dio
+I (453) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (457) : 
+
+App build Mar 20 2025 13:40:42 
+ESP_IDF_VER v4.2-dev-1303-gcd4fa46f5-dirty
+
+
+I (477) BTDM_INIT: BT controller compile version [1ee1530]
+I (477) system_api: Base MAC address is not set
+I (477) system_api: read default base MAC address from EFUSE
+W (487) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
+I (647) phy: phy_version: 4181, c9a03e2, Mar 10 2020, 12:45:06, 0, 2
+I (1287) SPP_ACCEPTOR_DEMO: ESP_SPP_INIT_EVT
+I (1307) SPP_ACCEPTOR_DEMO: event: 10
+I (1307) SPP_ACCEPTOR_DEMO: ESP_SPP_START_EVT
+I (1307) pwm: Start PWM...
+Configuring Initial Parameters of mcpwm......
+I (1317) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 
+I (1317) start_gpio_int: OK
+I (11317) BM:  benchmark results: min = 365, max = 634, total = 8982012
+I (11317) BM: , average = 499
+
+
+I (21317) BM:  benchmark results: min = 494, max = 505, total = 18962024
+I (21317) BM: , average = 499
+
+
+I (31317) BM:  benchmark results: min = 490, max = 508, total = 28942030
+I (31317) BM: , average = 499
+
+
+I (41317) BM:  benchmark results: min = 480, max = 518, total = 38922032
+I (41317) BM: , average = 499
+
+
+I (51317) BM:  benchmark results: min = 460, max = 538, total = 48902038
+I (51317) BM: , average = 499
+
+
+I (61317) BM:  benchmark results: min = 490, max = 508, total = 58882052
+I (61317) BM: , average = 499
+
+
+I (71317) BM:  benchmark results: min = 481, max = 517, total = 68862070
+I (71317) BM: , average = 499
+
+
+I (81317) BM:  benchmark results: min = 469, max = 529, total = 78842075
+I (81317) BM: , average = 499
+
+
+I (91317) BM:  benchmark results: min = 474, max = 523, total = 88822086
+I (91317) BM: , average = 499
+
+
+I (101317) BM:  benchmark results: min = 452, max = 545, total = 98802105
+I (101317) BM: , average = 499
+
+
+I (108247) SPP_ACCEPTOR_DEMO: ESP_BT_GAP_CFM_REQ_EVT Please compare the numeric value: 28353
+I (111317) BM:  benchmark results: min = 495, max = 503, total = 108782235
+I (111317) BM: , average = 499
+
+
+I (114687) SPP_ACCEPTOR_DEMO: authentication success: WIN-H1G3DJ9CAKM
+I (114687) SPP_ACCEPTOR_DEMO: 00 19 86 00 23 06 
+I (121317) BM:  benchmark results: min = 433, max = 565, total = 118762701
+I (121317) BM: , average = 499
+
+
+W (130877) BT_APPL: new conn_srvc id:26, app_id:255
+I (130887) SPP_ACCEPTOR_DEMO: ESP_SPP_SRV_OPEN_EVT
+I (131317) BM:  benchmark results: min = 422, max = 573, total = 128742712
+I (131317) BM: , average = 499
+
+
+E (138097) BT_APPL: bta_dm_pm_btm_status hci_status=12
+I (141317) BM:  benchmark results: min = 489, max = 509, total = 138722950
+I (141317) BM: , average = 499
+
+
+I (151317) BM:  benchmark results: min = 483, max = 516, total = 148703303
+I (151317) BM: , average = 499
+
+
+I (159787) SPP_ACCEPTOR_DEMO: speed(130.444046s ~ 159.346817s): 0.045394 kbit/s
+I (161317) BM:  benchmark results: min = 401, max = 597, total = 158683431
+I (161317) BM: , average = 499
+
+
+I (169717) SPP_ACCEPTOR_DEMO: speed(159.346817s ~ 169.272324s): 0.220845 kbit/s
+I (171317) BM:  benchmark results: min = 467, max = 531, total = 168663582
+I (171317) BM: , average = 499
+
+
+I (172497) SPP_ACCEPTOR_DEMO: speed(169.272324s ~ 172.047714s): 3.643451 kbit/s
+I (178297) SPP_ACCEPTOR_DEMO: speed(172.047714s ~ 177.855804s): 0.217627 kbit/s
+I (180707) SPP_ACCEPTOR_DEMO: speed(177.855804s ~ 180.257782s): 3.157398 kbit/s
+I (181317) BM:  benchmark results: min = 488, max = 510, total = 178643896
+I (181317) BM: , average = 499
+
+
+I (183777) SPP_ACCEPTOR_DEMO: speed(180.257782s ~ 183.336761s): 3.284205 kbit/s
+I (189017) SPP_ACCEPTOR_DEMO: speed(183.336761s ~ 188.576874s): 1.992324 kbit/s
+I (191317) BM:  benchmark results: min = 489, max = 508, total = 188624132
+I (191317) BM: , average = 499
+
+
+I (191737) SPP_ACCEPTOR_DEMO: speed(188.576874s ~ 191.290710s): 16.124773 kbit/s
+W (197207) BT_RFCOMM: port_rfc_closed RFCOMM connection in state 2 closed: Closed (res: 19)
+I (197207) SPP_ACCEPTOR_DEMO: ESP_SPP_CLOSE_EVT
+W (197217) BT_RFCOMM: rfc_find_lcid_mcb LCID reused LCID:0x42 current:0x0
+W (197217) BT_RFCOMM: RFCOMM_DisconnectInd LCID:0x42
+W (200087) BT_APPL: new conn_srvc id:26, app_id:255
+I (200097) SPP_ACCEPTOR_DEMO: ESP_SPP_SRV_OPEN_EVT
+I (201317) BM:  benchmark results: min = 488, max = 510, total = 198604589
+I (201317) BM: , average = 499
+
+
+I (211317) BM:  benchmark results: min = 386, max = 613, total = 208584690
+I (211317) BM: , average = 499
+
+
+I (221317) BM:  benchmark results: min = 496, max = 503, total = 218564707
+I (221317) BM: , average = 499
+
+
+I (231317) BM:  benchmark results: min = 468, max = 530, total = 228544724
+I (231317) BM: , average = 499
+
+
+W (237217) BT_RFCOMM: port_rfc_closed RFCOMM connection in state 2 closed: Closed (res: 19)
+I (237217) SPP_ACCEPTOR_DEMO: ESP_SPP_CLOSE_EVT
+W (238217) BT_RFCOMM: rfc_find_lcid_mcb LCID reused LCID:0x44 current:0x0
+W (238227) BT_RFCOMM: RFCOMM_DisconnectInd LCID:0x44
+I (241317) BM:  benchmark results: min = 488, max = 510, total = 238525328
+I (241317) BM: , average = 499
+
+
+W (245647) BT_APPL: new conn_srvc id:26, app_id:255
+I (245657) SPP_ACCEPTOR_DEMO: ESP_SPP_SRV_OPEN_EVT
+I (248487) SPP_ACCEPTOR_DEMO: speed(245.209045s ~ 248.046768s): 24.673306 kbit/s
+W (251277) BT_RFCOMM: port_rfc_closed RFCOMM connection in state 2 closed: Closed (res: 19)
+I (251277) SPP_ACCEPTOR_DEMO: ESP_SPP_CLOSE_EVT
+W (251287) BT_RFCOMM: rfc_find_lcid_mcb LCID reused LCID:0x46 current:0x0
+W (251287) BT_RFCOMM: RFCOMM_DisconnectInd LCID:0x46
+I (251317) BM:  benchmark results: min = 477, max = 510, total = 248505773
+I (251317) BM: , average = 499
+
+
+I (261317) BM:  benchmark results: min = 480, max = 518, total = 258485817
+I (261317) BM: , average = 499
+
+
+I (271317) BM:  benchmark results: min = 468, max = 530, total = 268465827
+I (271317) BM: , average = 499
+
+
+I (281317) BM:  benchmark results: min = 486, max = 512, total = 278445835
+I (281317) BM: , average = 499
+
+
+I (291317) BM:  benchmark results: min = 472, max = 530, total = 288425838
+I (291317) BM: , average = 499
+
+
+I (301317) BM:  benchmark results: min = 456, max = 540, total = 298405852
+I (301317) BM: , average = 499
+
+
+I (311317) BM:  benchmark results: min = 439, max = 561, total = 308385864
+I (311317) BM: , average = 499
+
+
+I (321317) BM:  benchmark results: min = 424, max = 573, total = 318365886
+I (321317) BM: , average = 499
+
+
+I (331317) BM:  benchmark results: min = 408, max = 592, total = 328345898
+I (331317) BM: , average = 499
+
+
+I (341317) BM:  benchmark results: min = 396, max = 601, total = 338325902
+I (341317) BM: , average = 499
+
+
+I (351317) BM:  benchmark results: min = 379, max = 621, total = 348305905
+I (351317) BM: , average = 499
+
+
+I (361317) BM:  benchmark results: min = 366, max = 634, total = 358285909
+I (361317) BM: , average = 499
+
+
+I (371317) BM:  benchmark results: min = 499, max = 500, total = 368265922
+I (371317) BM: , average = 499
+
+
+I (381317) BM:  benchmark results: min = 490, max = 507, total = 378245930
+I (381317) BM: , average = 499
+
+
+I (391317) BM:  benchmark results: min = 476, max = 522, total = 388225931
+I (391317) BM: , average = 499
+
+
+I (401317) BM:  benchmark results: min = 460, max = 538, total = 398205936
+I (401317) BM: , average = 499
+
+
+I (411317) BM:  benchmark results: min = 491, max = 507, total = 408185948
+I (411317) BM: , average = 499
+
+
+I (421317) BM:  benchmark results: min = 496, max = 503, total = 418165970
+I (421317) BM: , average = 499
+
+
+I (431317) BM:  benchmark results: min = 495, max = 504, total = 428145985
+I (431317) BM: , average = 499
+
+
+I (441317) BM:  benchmark results: min = 494, max = 505, total = 438125995
+I (441317) BM: , average = 499
+
+
+I (451317) BM:  benchmark results: min = 490, max = 508, total = 448106007
+I (451317) BM: , average = 499
+
+
+I (461317) BM:  benchmark results: min = 497, max = 501, total = 458086027
+I (461317) BM: , average = 499
+
+
+I (471317) BM:  benchmark results: min = 498, max = 500, total = 468066042
+I (471317) BM: , average = 499
+
+
+I (481317) BM:  benchmark results: min = 498, max = 500, total = 478046056
+I (481317) BM: , average = 499
+
+
+I (491317) BM:  benchmark results: min = 498, max = 500, total = 488026063
+I (491317) BM: , average = 499
+
+
+I (501317) BM:  benchmark results: min = 494, max = 504, total = 498006069
+I (501317) BM: , average = 499
+
+
+I (511317) BM:  benchmark results: min = 493, max = 507, total = 507986080
+I (511317) BM: , average = 499
+
+
+I (521317) BM:  benchmark results: min = 496, max = 502, total = 517966094
+I (521317) BM: , average = 499
+
+
+I (531317) BM:  benchmark results: min = 487, max = 511, total = 527946100
+I (531317) BM: , average = 499
+
+
+I (541317) BM:  benchmark results: min = 496, max = 501, total = 537926106
+I (541317) BM: , average = 499
+
+
+I (551317) BM:  benchmark results: min = 484, max = 514, total = 547906116
+I (551317) BM: , average = 499
+
+
+I (561317) BM:  benchmark results: min = 474, max = 524, total = 557886120
+I (561317) BM: , average = 499
+
+
+I (571317) BM:  benchmark results: min = 492, max = 505, total = 567866129
+I (571317) BM: , average = 499
+
+
+I (581317) BM:  benchmark results: min = 488, max = 510, total = 577846146
+I (581317) BM: , average = 499
+
+
+I (591317) BM:  benchmark results: min = 470, max = 530, total = 587826150
+I (591317) BM: , average = 499
+
+
+I (601317) BM:  benchmark results: min = 458, max = 540, total = 597806158
+I (601317) BM: , average = 499
+
+
+I (611317) BM:  benchmark results: min = 475, max = 522, total = 607786172
+I (611317) BM: , average = 499
+
+
+I (621317) BM:  benchmark results: min = 455, max = 539, total = 617766187
+I (621317) BM: , average = 499
+
+
+I (631317) BM:  benchmark results: min = 444, max = 553, total = 627746196
+I (631317) BM: , average = 499
+
+
+I (641317) BM:  benchmark results: min = 430, max = 573, total = 637726213
+I (641317) BM: , average = 499
+
+
+I (651317) BM:  benchmark results: min = 414, max = 585, total = 647706228
+I (651317) BM: , average = 499
+
+
+I (661317) BM:  benchmark results: min = 394, max = 602, total = 657686230
+I (661317) BM: , average = 499
+
+
+I (671317) BM:  benchmark results: min = 385, max = 613, total = 667666235
+I (671317) BM: , average = 499
+
+
+I (681317) BM:  benchmark results: min = 363, max = 635, total = 677646239
+I (681317) BM: , average = 499
+
+
+I (691317) BM:  benchmark results: min = 497, max = 500, total = 687626245
+I (691317) BM: , average = 499
+
+
+I (701317) BM:  benchmark results: min = 495, max = 504, total = 697606257
+I (701317) BM: , average = 499
+
+
+I (711317) BM:  benchmark results: min = 481, max = 517, total = 707586260
+I (711317) BM: , average = 499
+
+
+I (721317) BM:  benchmark results: min = 465, max = 533, total = 717566265
+I (721317) BM: , average = 499
+
+
+I (731317) BM:  benchmark results: min = 494, max = 504, total = 727546274
+I (731317) BM: , average = 499
+
+
+I (741317) BM:  benchmark results: min = 496, max = 503, total = 737526294
+I (741317) BM: , average = 499
+
+
+I (751317) BM:  benchmark results: min = 495, max = 504, total = 747506307
+I (751317) BM: , average = 499
+
+
+I (761317) BM:  benchmark results: min = 494, max = 505, total = 757486316
+I (761317) BM: , average = 499
+
+
+I (771317) BM:  benchmark results: min = 494, max = 504, total = 767466324
+I (771317) BM: , average = 499
+
+
+I (781317) BM:  benchmark results: min = 499, max = 500, total = 777446341
+I (781317) BM: , average = 499
+
+
+I (791317) BM:  benchmark results: min = 497, max = 500, total = 787426360
+I (791317) BM: , average = 499
+
+
+I (801317) BM:  benchmark results: min = 495, max = 504, total = 797406377
+I (801317) BM: , average = 499
+
+
+I (811317) BM:  benchmark results: min = 496, max = 501, total = 807386384
+I (811317) BM: , average = 499
+
+
+I (821317) BM:  benchmark results: min = 492, max = 504, total = 817366389
+I (821317) BM: , average = 499
+
+
+I (831317) BM:  benchmark results: min = 494, max = 505, total = 827346394
+I (831317) BM: , average = 499
+
+
+I (841317) BM:  benchmark results: min = 494, max = 505, total = 837326407
+I (841317) BM: , average = 499
+
+
+I (851317) BM:  benchmark results: min = 492, max = 506, total = 847306419
+I (851317) BM: , average = 499
+
+
+I (861317) BM:  benchmark results: min = 492, max = 505, total = 857286419
+I (861317) BM: , average = 499
+
+
+I (871317) BM:  benchmark results: min = 485, max = 513, total = 867266425
+I (871317) BM: , average = 499
+
+
+I (881317) BM:  benchmark results: min = 478, max = 520, total = 877246428
+I (881317) BM: , average = 499
+
+
+I (891317) BM:  benchmark results: min = 458, max = 540, total = 887226435
+I (891317) BM: , average = 499
+
+
+I (901317) BM:  benchmark results: min = 491, max = 507, total = 897206453
+I (901317) BM: , average = 499
+
+
+I (911317) BM:  benchmark results: min = 474, max = 524, total = 907186457
+I (911317) BM: , average = 499
+
+
+I (921317) BM:  benchmark results: min = 462, max = 536, total = 917166465
+I (921317) BM: , average = 499
+
+
+I (931317) BM:  benchmark results: min = 474, max = 524, total = 927146476
+I (931317) BM: , average = 499
+
+
+I (941317) BM:  benchmark results: min = 459, max = 542, total = 937126483
+I (941317) BM: , average = 499
+
+
+I (951317) BM:  benchmark results: min = 446, max = 554, total = 947106500
+I (951317) BM: , average = 499
+
+
+I (961317) BM:  benchmark results: min = 430, max = 565, total = 957086511
+I (961317) BM: , average = 499
+
+
+I (971317) BM:  benchmark results: min = 422, max = 577, total = 967066527
+I (971317) BM: , average = 499
+
+
+I (981317) BM:  benchmark results: min = 401, max = 597, total = 977046534
+I (981317) BM: , average = 499
+
+
+I (991317) BM:  benchmark results: min = 388, max = 610, total = 987026543
+I (991317) BM: , average = 499
+
+
+I (1001317) BM:  benchmark results: min = 373, max = 625, total = 997006548
+I (1001317) BM: , average = 499
+
+
+I (1011317) BM:  benchmark results: min = 498, max = 500, total = 1006986556
+I (1011317) BM: , average = 499
+
+
+I (1021317) BM:  benchmark results: min = 499, max = 500, total = 1016966570
+I (1021317) BM: , average = 499
+
+
+I (1031317) BM:  benchmark results: min = 485, max = 513, total = 1026946577
+I (1031317) BM: , average = 499
+
+
+I (1041317) BM:  benchmark results: min = 470, max = 528, total = 1036926579
+I (1041317) BM: , average = 499
+
+
+I (1051317) BM:  benchmark results: min = 455, max = 543, total = 1046906586
+I (1051317) BM: , average = 499
+
+
+I (1061317) BM:  benchmark results: min = 496, max = 502, total = 1056886605
+I (1061317) BM: , average = 499
+
+
+I (1071317) BM:  benchmark results: min = 495, max = 504, total = 1066866627
+I (1071317) BM: , average = 499
+
+
+I (1081317) BM:  benchmark results: min = 498, max = 500, total = 1076846633
+I (1081317) BM: , average = 499
+
+
+I (1091317) BM:  benchmark results: min = 498, max = 500, total = 1086826642
+I (1091317) BM: , average = 499
+
+
+I (1101317) BM:  benchmark results: min = 498, max = 500, total = 1096806656
+I (1101317) BM: , average = 499
+
+
+I (1111317) BM:  benchmark results: min = 498, max = 500, total = 1106786673
+I (1111317) BM: , average = 499
+
+
+14:02:23 USER: COM20 closed
