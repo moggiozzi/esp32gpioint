@@ -46,12 +46,12 @@ void start_gpio_int(void)
 	io_conf.pull_up_en = 0;
 	ret |= gpio_config(&io_conf);
 #ifdef USE_GPIO_ISR_SERVICE
-	ret |= gpio_install_isr_service(ESP_INTR_FLAG_IRAM);
+	ret |= gpio_install_isr_service(ESP_INTR_FLAG_IRAM | ESP_INTR_FLAG_LEVEL3);
 	ret |= gpio_isr_handler_add(INT_GPIO_PIN, gpio_isr_handler, NULL);
 #else
 	ret |= gpio_intr_enable(INT_GPIO_PIN);
 	ret |= gpio_set_intr_type(INT_GPIO_PIN, GPIO_INTR_POSEDGE);
-	ret |= gpio_isr_register(gpio_isr_handler, NULL, ESP_INTR_FLAG_IRAM, NULL);
+	ret |= gpio_isr_register(gpio_isr_handler, NULL, ESP_INTR_FLAG_IRAM | ESP_INTR_FLAG_LEVEL3, NULL);
 #endif
 	if (ret == ESP_OK)
 	{
